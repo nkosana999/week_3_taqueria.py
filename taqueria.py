@@ -21,5 +21,8 @@ def main():
             val = val + price
         except KeyError:
             pass
+        except EOFError:
+            print()
+            break
 
 main()
